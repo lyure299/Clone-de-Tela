@@ -1,0 +1,163 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte padrão e fundo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f3f7;
+  color: #333;
+}
+
+/* Container centralizado e com largura fixa */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background-color: #00d261;
+  padding: 15px 0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+  height: 40px;
+  vertical-align: middle;
+}
+
+nav {
+  float: right;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+}
+
+/* Limpar float do nav */
+.header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Banner principal */
+.banner {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  margin: 30px 0;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00d261;
+}
+
+.banner p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.btn-primary {
+  background-color: #00d261;
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #00b74a;
+}
+
+/* Funções principais */
+.funcoes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.funcao {
+  background: white;
+  padding: 25px;
+  width: 22%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.funcao:hover {
+  transform: translateY(-8px);
+}
+
+.funcao img {
+  width: 50px;
+  margin-bottom: 15px;
+  filter: invert(35%) sepia(70%) saturate(300%) hue-rotate(120deg) brightness(90%) contrast(90%);
+}
+
+.funcao h3 {
+  color: #00d261;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Ofertas */
+.ofertas {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.ofertas h2 {
+  margin-bottom: 20px;
+  color: #00d261;
+  font-weight: 700;
+}
+
+.ofertas ul {
+  list-style: inside disc;
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
